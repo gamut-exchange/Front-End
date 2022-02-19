@@ -21,7 +21,7 @@ const Efficient = () => {
 
     if (x < 0) {
       let y = x + 100;
-      let cN = (1/(y/100)-1) * 100;
+      let cN = (1 / (y / 100) - 1) * 100;
       changeP = cN;
     } else {
       changeP = x;
@@ -43,13 +43,13 @@ const Efficient = () => {
     let aamm_Value = 0;
     let bIn = 0;
 
-    while (priceA < changeP/100+1) {
+    while (priceA < changeP / 100 + 1) {
       //AAMM Swap
-      if (priceA > changeP/100+1 - priceA/100){
-        bIn = pbB *0.0005;
-       } else {
-        bIn = pbB*0.01;
-       }
+      if (priceA > changeP / 100 + 1 - priceA / 100) {
+        bIn = pbB * 0.0005;
+      } else {
+        bIn = pbB * 0.01;
+      }
       let exp =
         (wB - (wB * (1 - pbB / (pbB + bIn))) / (1 + pbB / (pbB + bIn))) /
         (wB + (wB * (1 - pbB / (pbB + bIn))) / (1 + pbB / (pbB + bIn)));
@@ -61,7 +61,7 @@ const Efficient = () => {
       pbA -= bOut;
       pbB += bIn;
       // calc price
-      priceA = (pbB/wB) / (pbA / wA);
+      priceA = pbB / wB / (pbA / wA);
       let priceB = 1;
 
       let amm_bA = Math.sqrt(k) / Math.sqrt(priceA);

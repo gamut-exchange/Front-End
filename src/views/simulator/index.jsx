@@ -4,8 +4,8 @@ import Header from "./Header";
 
 const Index = () => {
   return (
-    <Layout>
-      <Header />
+    <Layout >
+      <Header  />
     </Layout>
   );
 };

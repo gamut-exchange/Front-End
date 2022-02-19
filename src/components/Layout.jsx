@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AppContext } from "./context";
 import Footer from "./menues/Footer";
 import Nav from "./menues/Nav";
 const Layout = ({ children }) => {
@@ -15,7 +16,7 @@ const Layout = ({ children }) => {
       } w-full transition-all duration-700 ease-in-out`}
     >
       <Nav handleDark={handleDark} dark={dark} />
-      {children}
+      <AppContext.Provider value={{ dark }}>{children}</AppContext.Provider>
       <Footer />
     </div>
   );

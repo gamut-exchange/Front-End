@@ -54,7 +54,12 @@ const Header = () => {
                   const { id, icon, url } = item;
                   return (
                     <li key={id}>
-                      <a href={url} rel="noopener noreferrer" target="_blank" className="w-7 h-7">
+                      <a
+                        href={url}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className="w-7 h-7"
+                      >
                         <img className="w-full h-full" src={icon} alt="icon" />
                       </a>
                     </li>
@@ -72,7 +77,12 @@ const Header = () => {
                   const { id, icon, url } = item;
                   return (
                     <li key={id}>
-                      <a href={url} rel="noopener noreferrer" target="_blank" className="w-7">
+                      <a
+                        href={url}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className="w-7"
+                      >
                         <img className="w-full" src={icon} alt="icon" />
                       </a>
                     </li>
