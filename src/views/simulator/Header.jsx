@@ -17,7 +17,7 @@ const Header = () => {
   };
   const handleClose = () => setOpen(false);
   return (
-    <div className="py-24 bg-[url('../images/bg.png')] bg-contain bg-center bg-no-repeat relative dark:bg-dark-primary dark:bg-opacity-95">
+    <div className=" pt-12 pb-24 md:pb-24 md:pt-24 bg-[url('../images/bg.png')] bg-contain bg-center bg-no-repeat relative dark:bg-dark-primary dark:bg-opacity-95">
       <div className="main-container">
         <div className="flex flex-col justify-center items-center">
           <div>
