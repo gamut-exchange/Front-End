@@ -17,7 +17,15 @@
   src: local("Segoe UI Bold"),
     url("/FontFamily/Segoe UI Bold.woff") format("woff");
 } */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .main-container {
   @apply max-w-container px-5 m-auto w-full;
 }

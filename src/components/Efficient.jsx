@@ -130,11 +130,11 @@ const Efficient = () => {
                 </div>
                 <div className="flex-1">
                   <input
-                    type={`number`}
+                    type={`text`}
                     value={liquidity}
                     onChange={handleliq}
-                    className="input-title dark:text-grey-dark w-full text-right  bg-transparent focus:outline-none"
-                  ></input>
+                    className="input-title appearance-none dark:text-grey-dark w-full text-right  bg-transparent focus:outline-none"
+                  />
                 </div>
               </div>
               <div className="bg-white-bg dark:bg-grey-dark dark:bg-opacity-30 p-4 flex items-center justify-between">
@@ -145,11 +145,11 @@ const Efficient = () => {
                 </div>
                 <div className="flex-1">
                   <input
-                    type={`number`}
+                    type={`text`}
                     value={price}
                     onChange={handlePrice}
                     className="input-title dark:text-grey-dark w-full text-right  bg-transparent focus:outline-none"
-                  ></input>
+                  />
                 </div>
               </div>
               <div className="bg-grey-dark p-4 flex items-center justify-between">

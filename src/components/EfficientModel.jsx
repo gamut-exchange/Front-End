@@ -15,7 +15,7 @@ const EfficientModel = ({ open, close }) => {
         sx={{ padding: 1 }}
       >
         <div className={dark ? "dark" : "light"}>
-          <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[calc(100vw-40px)] md:max-w-[1057px] md:h-auto h-[calc(100vh-100px)] w-full px-6 shadow-box  bg-white dark:bg-dark-primary overflow-y-scroll">
+          <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[calc(100vw-40px)] md:max-w-[1057px] md:h-auto h-[calc(100vh-100px)] w-full px-0 md:px-6 shadow-box  bg-white dark:bg-dark-primary overflow-y-scroll no-scrollbar">
             <div className="">
               <Efficient />
             </div>
