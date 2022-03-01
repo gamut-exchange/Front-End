@@ -103,7 +103,7 @@ const Efficient = () => {
           <div className="md:text-left text-center">
             <h2 className="title-secondary">Provably Efficient </h2>
             <p className="desc">
-              Gamut.Finance uses customized algorithms to calculate internal
+              Gamut Exchange uses customized algorithms to calculate internal
               incentives and maximize the mutual value between ecosystem
               participants.
               <br />
