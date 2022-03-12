@@ -34,5 +34,5 @@ const social = [
   { id: 1, icon: <AiOutlineTwitter />, url: "twitter" },
   { id: 2, icon: <FaDiscord />, url: "https://discord.gg/5vHPEFSe7Y" },
   { id: 3, icon: <FaTelegramPlane />, url: "https://t.me/+T1BLwIqs789jOWE0" },
-  { id: 4, icon: <AiOutlineGithub />, url: "git" },
+  { id: 4, icon: <AiOutlineGithub />, url: "https://github.com/gamut-exchange" },
 ];
