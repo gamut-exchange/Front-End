@@ -39,7 +39,7 @@ const Header = () => {
             <Link
               className="btn-primary dark:text-dark-primary w-full"
               style={{ maxWidth: 182, minHeight: 49 }}
-              to="https://docs.gamut.exchange/"
+              onClick={()=> window.open("https://docs.gamut.exchange/", "_blank")}
             >
               Read Docs
             </Link>
