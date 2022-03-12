@@ -36,13 +36,13 @@ const Header = () => {
             >
               Calculator
             </button>
-            <Link
+            <button
               className="btn-primary dark:text-dark-primary w-full"
               style={{ maxWidth: 182, minHeight: 49 }}
               onClick={()=> window.open("https://docs.gamut.exchange/", "_blank")}
             >
               Read Docs
-            </Link>
+            </button>
           </div>
           <div className="flex w-full flex-wrap gap-y-7 md:flex-row flex-col gap-x-7 max-w-xl px-2">
             <div className="flex-1">
