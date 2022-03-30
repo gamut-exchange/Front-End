@@ -154,7 +154,7 @@ const Efficient = () => {
               </div>
               <div className="bg-grey-dark p-4 flex items-center justify-between">
                 <p className="input-title dark:text-dark-primary">
-                  Regular Autmatet Market Maker
+                  Regular Automatet Market Maker
                 </p>
                 <span className="input-title dark:text-dark-primary">
                   {regular.toFixed(2)}
@@ -162,7 +162,7 @@ const Efficient = () => {
               </div>
               <div className="bg-grey-dark p-4 flex items-center justify-between">
                 <p className="input-title dark:text-dark-primary">
-                  Gamut Autmatet Market Maker
+                  Gamut Automatet Market Maker
                 </p>
                 <span className="input-title dark:text-dark-primary">
                   {gamut.toFixed(2)}
