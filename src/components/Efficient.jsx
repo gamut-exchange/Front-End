@@ -5,6 +5,7 @@ const Efficient = () => {
   const [price, setPrice] = useState(0);
   const [regular, setRegular] = useState(0);
   const [gamut, setGamut] = useState(0);
+  const [edge , setEdge] = useState(0);
 
   const handleliq = (e) => {
     setLiquidity(e.target.value);
@@ -18,6 +19,11 @@ const Efficient = () => {
     let x = parseInt(price);
     console.log(amountIn, x, "amount, x");
     let changeP = 0;
+
+    if (x < -99){
+      x = -99
+      setPrice(-99)
+    }
 
     if (x < 0) {
       let y = x + 100;
@@ -45,18 +51,22 @@ const Efficient = () => {
 
     while (priceA < changeP / 100 + 1) {
       //AAMM Swap
-      if (priceA > changeP / 100 + 1 - priceA / 100) {
-        bIn = pbB * 0.0005;
+      console.log(pbB, "pbB before");
+      if (priceA > changeP / 100 + 1 - priceA / 25) {
+        bIn = pbB * 0.00005;
       } else {
         bIn = pbB * 0.01;
       }
+      console.log(bIn);
       let exp =
         (wB - (wB * (1 - pbB / (pbB + bIn))) / (1 + pbB / (pbB + bIn))) /
-        (wB + (wB * (1 - pbB / (pbB + bIn))) / (1 + pbB / (pbB + bIn)));
+        (wA + (wB * (1 - pbB / (pbB + bIn))) / (1 + pbB / (pbB + bIn)));
+      console.log(exp);
       let bOut = pbA * (1 - (pbB / (pbB + bIn)) ** exp);
       //Weight Adjustment
       wB = wB - ((pbA / (pbA - bOut) - 1) * (1 - wA)) / (1 + wA / wB);
-      wA = 1 - wB;
+      wA = 1-wB;
+      
       // Pool Balance Adjustment
       pbA -= bOut;
       pbB += bIn;
@@ -66,6 +76,12 @@ const Efficient = () => {
 
       let amm_bA = Math.sqrt(k) / Math.sqrt(priceA);
       let amm_bB = Math.sqrt(k) * Math.sqrt(priceA);
+
+      console.log(pbA, "pbA");
+      console.log(pbB, "pbB");
+      console.log(bOut, "bOut");
+      console.log(wA, "wA")
+      console.log(wB, "wB")
       console.log(amm_bB, "amm bb");
 
       if (x > 0) {
@@ -81,8 +97,10 @@ const Efficient = () => {
       }
       setRegular(amm_Value);
       setGamut(aamm_Value);
+      setEdge(aamm_edge);
       console.log(hodl_Value, "hodle value");
       console.log(aamm_edge, "aamm_edge");
+      console.log(aamm_Value);
       // text +=
       //   "<br>AMM:" +
       //   amm_Value.toFixed(2) +
@@ -164,7 +182,10 @@ const Efficient = () => {
                 <p className="input-title dark:text-dark-primary">
                   Gamut Automatet Market Maker
                 </p>
-                <span className="input-title dark:text-dark-primary">
+                <span className="input-title dark:text-dark-primary" style={{fontWeight: "bold", color: "green"}}>
+                  +{edge.toFixed(2)}%
+                </span>
+                <span className="input-title dark:text-dark-primary" >
                   {gamut.toFixed(2)}
                 </span>
               </div>
