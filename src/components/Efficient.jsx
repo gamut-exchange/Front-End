@@ -8,9 +8,6 @@ const Efficient = () => {
   const [edge , setEdge] = useState(0);
 
   const handleliq = (e) => {
-    if (e<1){
-      e=1;
-    }
     setLiquidity(e.target.value);
   };
   const handlePrice = (e) => {
