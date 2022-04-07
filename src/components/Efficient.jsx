@@ -8,6 +8,9 @@ const Efficient = () => {
   const [edge , setEdge] = useState(0);
 
   const handleliq = (e) => {
+    if (e<1){
+      e=1;
+    }
     setLiquidity(e.target.value);
   };
   const handlePrice = (e) => {
@@ -19,6 +22,11 @@ const Efficient = () => {
     let x = parseInt(price);
     console.log(amountIn, x, "amount, x");
     let changeP = 0;
+
+    if (amountIn < 1){
+      setLiquidity(100)
+      amountIn = 100
+    }
 
     if (x < -99){
       x = -99
