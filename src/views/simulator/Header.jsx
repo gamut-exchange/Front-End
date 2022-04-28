@@ -101,7 +101,7 @@ const Header = () => {
 export default Header;
 
 const social = [
-  { id: 1, icon: twitter, url: "https://twitter.com/DeGamut" },
+  { id: 1, icon: twitter, url: "https://twitter.com/GamutExchange" },
   { id: 2, icon: discord, url: "https://discord.gg/5vHPEFSe7Y" },
   { id: 3, icon: telegram, url: "https://t.me/+sAS0I9338zdlNTRk" },
   { id: 4, icon: git, url: "https://github.com/gamut-exchange" },

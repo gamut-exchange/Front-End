@@ -31,7 +31,7 @@ const Footer = () => {
 export default Footer;
 
 const social = [
-  { id: 1, icon: <AiOutlineTwitter />, url: "https://twitter.com/DeGamut" },
+  { id: 1, icon: <AiOutlineTwitter />, url: "https://twitter.com/GamutExchange" },
   { id: 2, icon: <FaDiscord />, url: "https://discord.gg/5vHPEFSe7Y" },
   { id: 3, icon: <FaTelegramPlane />, url: "https://t.me/+sAS0I9338zdlNTRk" },
   { id: 4, icon: <AiOutlineGithub />, url: "https://github.com/gamut-exchange" },
