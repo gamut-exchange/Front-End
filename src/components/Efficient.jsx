@@ -141,7 +141,7 @@ const Efficient = () => {
             className="p-6 shadow-box border w-full border-light-primary rounded"
           >
             <h3 className="model-title text-center ">
-              AMM/AAMM Value Calculator
+              Regular vs. Gamut Value Calculator
             </h3>
             <hr className="my-4" />
             <div className="flex flex-col gap-y-4">
