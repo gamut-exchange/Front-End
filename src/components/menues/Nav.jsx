@@ -53,19 +53,14 @@ const Nav = ({ handleDark, dark }) => {
                 </div>
               )}{" "}
             </button>
-            <Link
-              className="text-light-primary dark:text-grey-dark text-lg capitalize"
-              to={`/`}
-            >
-              Launch App
-            </Link>
-            <Link
+    
+            <div
               style={{ width: 166, height: 49 }}
               className="btn-primary dark:text-dark-primary font-sans "
               to="/"
             >
-              Connect
-            </Link>
+              Coming soon
+            </div>
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -110,19 +105,19 @@ const Nav = ({ handleDark, dark }) => {
                       )}{" "}
                     </button>
                   </div>
-                  <Link
+                  {/* <Link
                     className="text-light-primary dark:text-grey-dark text-lg capitalize"
                     to={`/`}
                   >
                     Launch App
-                  </Link>
-                  <Link
+                  </Link> */}
+                  <div
                     style={{ height: 49 }}
                     className="btn-primary dark:text-dark-primary font-sans w-full"
                     to="/"
                   >
-                    Connect
-                  </Link>
+                    Coming soon
+                  </div>
                 </div>
               </div>
             </Drawer>

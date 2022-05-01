@@ -17,7 +17,6 @@ const Efficient = () => {
   const calculation = () => {
     let amountIn = parseInt(liquidity);
     let x = parseInt(price);
-    console.log(amountIn, x, "amount, x");
     let changeP = 0;
 
     if (amountIn < 1){
@@ -188,7 +187,7 @@ const Efficient = () => {
                   Gamut Automatet Market Maker
                 </p>
                 <span className="input-title dark:text-dark-primary" style={{fontWeight: "bold", color: "green"}}>
-                  +{edge.toFixed(2)}%
+                  +{edge.toFixed(2)}% &nbsp;
                 </span>
                 <span className="input-title dark:text-dark-primary" >
                   {gamut.toFixed(2)}
@@ -197,8 +196,10 @@ const Efficient = () => {
             </div>
 
             <button
+            
+
               onClick={calculation}
-              className="w-full text-light-primary dark:text-grey-dark py-2 mt-4"
+              className="w-full text-light-primary dark:text-grey-dark py-2 mt-4 btn-primary dark:text-dark-primary font-sans "
             >
               Calculate
             </button>
